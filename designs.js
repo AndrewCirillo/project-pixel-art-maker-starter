@@ -46,11 +46,11 @@ function makeGrid(height, width) {
     }
 }
 //function to convert hex to RBG so logical comparison of background color and picker color works.
-function hexToRGB(h) {
+function hexToRGB(hex) {
     let r = 0, g = 0, b = 0;
-    r = "0x" + h[1] + h[2];
-    g = "0x" + h[3] + h[4];
-    b = "0x" + h[5] + h[6];
+    r = "0x" + hex[1] + hex[2];
+    g = "0x" + hex[3] + hex[4];
+    b = "0x" + hex[5] + hex[6];
     return "rgb("+ +r + ", " + +g + ", " + +b + ")";
 }
 
