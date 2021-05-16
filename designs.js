@@ -15,7 +15,6 @@ picker.addEventListener('change', function(){
 
 //input listener and action
 pixelCanvas.addEventListener('click', function(clicked) {
-//Get clicked variables
     if (clicked.target.nodeName === 'TD') {
         let cell = clicked.target.style;
         if (cell.backgroundColor != hexToRGB(color)) {
